@@ -1,0 +1,22 @@
+/* ----------------------------MOBILE------------------------ */
+@media screen and (min-width: 428px) {
+  .container {
+    width: 428px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero {
+    background-image: var(--gradient), url(../images/people-office.jpg);
+  }
+  .hero-title {
+    font-size: 36px;
+  }
+}
+/* ------------------------------LAPTOP-------------------------------*/
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
