@@ -346,10 +346,10 @@ body {
 .contact-list {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  /* gap: 12px; */
   position: absolute;
   top: -50%;
-  right: 16px;
+  right: 36px;
 }
 .contact-li {
   margin: auto;
@@ -357,7 +357,7 @@ body {
 .contact-item {
   font-family: inherit;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: inherit;
