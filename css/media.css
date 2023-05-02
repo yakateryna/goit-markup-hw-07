@@ -1,14 +1,12 @@
 /*---------------------------------------TABLET------------------------------*/
 
 @media screen and (min-width: 768px) and (max-width: 1157px) {
-  .container {
-    max-width: 1157px;
-    margin-left: 0;
-    margin-right: 0;
-  }
+  /* .container {
+    margin: 0 auto;
+  } */
   .section {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
   }
   /* ------------------HEADER-------------- */
   .header-container {
@@ -72,7 +70,7 @@
   /* -------------------------------HERO------------------------------- */
   .hero {
     background-image: var(--gradient), url(../images/bg-tablet.jpg);
-    min-width: 1440px;
+    max-width: 1157px;
     height: 600px;
   }
 
