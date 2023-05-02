@@ -813,7 +813,7 @@ body {
   position: relative;
   background-color: var(--white);
   border-radius: 4px;
-  width: 100%;
+  max-width: 392px;
   min-height: 586px;
   top: 50%;
   left: 50%;
