@@ -162,6 +162,22 @@
   .customers-item {
     flex-basis: calc((100% - 120px) / 3);
   }
+  /* --------------------------------------------FOOTER----------------- */
+  .footer-wrap {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 0;
+    column-gap: 24px;
+    justify-content: center;
+    max-width: 552px;
+    align-items: baseline;
+  }
+  .about-logo-footer {
+    text-align: start;
+  }
+  .footer-soc-media-title {
+    text-align: start;
+  }
 }
 /* ------------------------------------------------------------------------------ */
 /* ----------------------------------------------------------------------------- */
