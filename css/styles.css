@@ -85,7 +85,7 @@ body {
   overflow: hidden;
 }
 /* =========================================================================================== */
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 120px) and (max-width: 768px) {
   .container {
     max-width: 428px;
   }
@@ -166,12 +166,31 @@ body {
   z-index: 2;
   opacity: 1;
 }
-.mobile-menu.is-hidden {
+/* ------------------------------------------------------------------- */
+.team-soc-link {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--iris);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: var(--transition-fill);
+}
+.team-soc-link:focus {
+  background-color: var(--ocean);
+}
+.team-soc-icon {
+  fill: var(--cloud);
+}
+
+.mobile-mobile-menu.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
 }
-.menu-close-button {
+.mobile-menu-close-button {
   position: absolute;
   cursor: pointer;
   top: 24px;
@@ -187,24 +206,24 @@ body {
   border-radius: 50%;
   transition: background-color var(--transition);
 }
-.menu-close-button:is(:hover, :focus) {
+.mobile-menu-close-button:is(:hover, :focus) {
   background-color: var(--ocean);
   border: 0;
 }
-.menu-list {
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* gap: 40px; */
-  /* margin-top: 80px; */
+.mobile-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 80px;
 }
 
-.menu-item {
+.mobile-menu-item {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: #434455;
+  color: var(--slate);
   transition: color var(--transition);
 }
 
@@ -212,24 +231,24 @@ body {
   color: var(--bg-color-social-icons);
 }
 
-.menu-item:is(:hover, :focus) {
+.mobile-menu-item:is(:hover, :focus) {
   color: var(--text-color-focus-hover, #404bbf);
 }
 
-.menu-address {
+.mobile-menu-address {
   margin-top: auto;
   margin-right: auto;
 }
 
-.menu-contact {
+.mobile-menu-contact {
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
 
-.menu-tel {
+.mobile-menu-tel {
   font-weight: 700;
-  font-size: 36px;
+
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
@@ -237,8 +256,8 @@ body {
   transition: color var(--transition);
 }
 
-.menu-tel:is(:hover, :focus) {
-  color: var(--ocean, #404bbf);
+.mobile-menu-tel:is(:hover, :focus) {
+  color: var(--ocean);
 }
 
 .menu-mail {
@@ -250,15 +269,15 @@ body {
   transition: color var(--transition);
 }
 
-.menu-mail:is(:hover, :focus) {
+.mobile-menu-mail:is(:hover, :focus) {
   color: var(--ocean, #404bbf);
 }
 
-.menu-soc-list {
+.mobile-menu-soc-list {
   display: flex;
   margin-top: 48px;
   margin-right: auto;
-  gap: 56px;
+  gap: 20px;
 }
 /*---------------------------------HEADER-----------------------------*/
 /* --------------------------------Mobile----------------------------- */
@@ -635,10 +654,7 @@ body {
 .fourth-section-soc-icon {
   fill: var(--cloud);
 }
-/*---------------------------------------------SECTION 4 (OUR TEAM)------------------------*/
-/* ----------------------------------------------Laptop---------------------------- */
-/*------------------------------------------------------------SECTION 4 (OUR TEAM)------------------------*/
-/* ---------------------------------------------------------------Descktop---------------------------- */
+
 /*----------------------------SECTION 5 (Customers)------------------------*/
 .customers-title {
   font-weight: 700;

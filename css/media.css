@@ -355,6 +355,9 @@
     border: 1px solid var(--color-card-border, #e7e9fc);
   }
   /* -----------------------------------------SECTION 4---------------------------------- */
+  .fourth-section {
+    background-color: var(--cloud);
+  }
   .fourth-section-list {
     display: flex;
     gap: 24px;
