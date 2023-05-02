@@ -9,20 +9,33 @@
     padding-bottom: 96px;
   }
   /* ------------------HEADER-------------- */
+  .mobile-menu-button {
+    display: none;
+  }
+  .mobile-menu {
+    display: none;
+  }
+
   .header-container {
-    flex-wrap: nowrap;
-  }
-  .logo-link {
-    flex-wrap: nowrap;
-    margin-left: auto;
-  }
-  .menu-list {
     display: flex;
-    gap: 40px;
+    align-items: center;
+  }
+
+  .page-header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--cornflower);
   }
   .adress {
+    font-style: normal;
+    display: flex;
     margin-left: auto;
   }
+
+  .page-nav {
+    display: flex;
+  }
+
   /* .contact-list {
     display: flex;
     gap: 40px;
