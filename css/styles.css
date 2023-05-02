@@ -361,7 +361,7 @@ body {
   background-color: var(--ocean);
   bottom: -24px;
 }
-/* Contact */
+/*------------------------------Contact----------------------------------- */
 .header-container {
   position: relative;
 }
@@ -393,8 +393,7 @@ body {
   width: 428px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 112px 54px;
 }
 .hero-button {
   border: none;
@@ -460,7 +459,6 @@ body {
   }
   @media screen and (max-width: 768px) {
     .hero .about-hero-container {
-      margin-top: 72px;
       border-radius: 4px;
       min-width: 169px;
       font-family: "Roboto", sans-serif;

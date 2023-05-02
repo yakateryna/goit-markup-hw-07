@@ -241,11 +241,15 @@
 
   .contact-item {
     font-weight: 400;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--navy-blue);
     transition: color var(--transition);
+  }
+  .contact-list {
+    display: flex;
+    gap: 40px;
   }
   .contact-li {
     position: relative;
@@ -281,8 +285,9 @@
   /* --------------------------------------HERO------------------------------ */
   .hero {
     background-image: var(--gradient), url(../images/bg-desktop.jpg);
-    min-width: 1440px;
+    max-width: 1440px;
     height: 600px;
+    margin: 0 auto;
   }
 
   @media (min-device-pixel-ratio: 2),
