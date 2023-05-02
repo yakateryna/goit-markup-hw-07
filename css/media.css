@@ -1,14 +1,11 @@
 /*---------------------------------------TABLET------------------------------*/
 
 @media screen and (min-width: 768px) and (max-width: 1157px) {
-  /* .container {
-    margin: 0 auto;
-  } */
   .section {
     padding-top: 96px;
     padding-bottom: 96px;
   }
-  /* ------------------HEADER-------------- */
+  /* ------------------------------HEADER-------------- */
   .mobile-menu-button {
     display: none;
   }
@@ -20,10 +17,16 @@
     display: flex;
     align-items: center;
   }
+  .menu-list {
+    display: flex;
+  }
+  .menu-link {
+    display: flex;
+  }
 
   .page-header {
     padding-top: 24px;
-    padding-bottom: 24px;
+    padding-bottom: 22px;
     border-bottom: 1px solid var(--cornflower);
   }
   .adress {
@@ -36,21 +39,25 @@
     display: flex;
   }
 
-  /* .contact-list {
-    display: flex;
-    gap: 40px;
-  } */
-  .contact-li {
-    position: relative;
-    font-weight: 500;
+  .contact-item {
+    font-weight: 400;
     font-size: 12px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--navy-blue);
     transition: color var(--transition);
   }
+  .contact-li {
+    position: relative;
+
+    color: var(--navy-blue);
+    transition: color var(--transition);
+  }
   .contact-li:is(:hover, :focus) {
     color: var(--ocean);
+  }
+  .underline::after {
+    bottom: -31px;
   }
 
   .activ-page {
@@ -68,14 +75,6 @@
     background-color: #404bbf;
     border-radius: 2px;
   }
-  /* .contact-item {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-    transition: color var(--transition);
-  } */
 
   .contact-item:is(:hover, :focus) {
     color: #404bbf;
@@ -171,12 +170,26 @@
     justify-content: center;
     max-width: 552px;
     align-items: baseline;
+    margin-right: auto;
   }
   .about-logo-footer {
     text-align: start;
   }
   .footer-soc-media-title {
     text-align: start;
+  }
+  .subscribe-text {
+    text-align: start;
+    margin-right: auto;
+  }
+  .subscribe-input {
+    width: 264px;
+  }
+  .subscribe-field {
+    gap: 24px;
+  }
+  .subscribe-wrap {
+    margin-right: 38px;
   }
 }
 /* ------------------------------------------------------------------------------ */
@@ -200,43 +213,52 @@
   .mobile-menu {
     display: none;
   }
-
   .header-container {
-    flex-wrap: nowrap;
+    display: flex;
+    align-items: center;
   }
-
-  .logo-link {
-    flex-wrap: nowrap;
-  }
-
   .menu-list {
     display: flex;
-    gap: 40px;
+  }
+  .menu-link {
+    display: flex;
   }
 
+  .page-header {
+    padding-top: 24px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid var(--cornflower);
+  }
   .adress {
+    font-style: normal;
+    display: flex;
     margin-left: auto;
   }
 
-  .contact-list {
+  .page-nav {
     display: flex;
-    gap: 40px;
   }
 
-  .contact-li {
-    position: relative;
-    font-weight: 500;
-    font-size: 16px;
+  .contact-item {
+    font-weight: 400;
+    font-size: 12px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--navy-blue);
     transition: color var(--transition);
   }
+  .contact-li {
+    position: relative;
 
+    color: var(--navy-blue);
+    transition: color var(--transition);
+  }
   .contact-li:is(:hover, :focus) {
     color: var(--ocean);
   }
-
+  .underline::after {
+    bottom: -31px;
+  }
   .activ-page {
     color: var(--iris);
   }
@@ -251,15 +273,6 @@
     height: 4px;
     background-color: #404bbf;
     border-radius: 2px;
-  }
-
-  .header-mail {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-    transition: color var(--transition);
   }
 
   .contact-item:is(:hover, :focus) {
@@ -343,8 +356,13 @@
   }
   /* -----------------------------------------SECTION 4---------------------------------- */
   .fourth-section-list {
-    flex-wrap: nowrap;
+    display: flex;
     gap: 24px;
+  }
+  .background {
+    display: flex;
+    background-color: var(--white);
+    flex-basis: calc((100% - 72px) / 4);
   }
   /* -------------------------------------------CUSTOMERS------------------------ */
   .customers-list {

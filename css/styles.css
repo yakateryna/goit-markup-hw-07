@@ -99,11 +99,13 @@ body {
   .contact-list {
     display: none;
   }
+  .adress {
+    display: none;
+  }
   .second-section-icon {
     display: none;
   }
   .second-section-title {
-    text-align: center;
   }
 
   .fourth-section {
@@ -134,6 +136,9 @@ body {
   .fourth-section-pic {
     max-width: 100%;
     height: auto;
+  }
+  .subscribe-field {
+    flex-wrap: wrap;
   }
 }
 /* =========================================================================================== */
@@ -257,8 +262,10 @@ body {
 }
 /*---------------------------------HEADER-----------------------------*/
 /* --------------------------------Mobile----------------------------- */
+
 .header-container {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -270,16 +277,19 @@ body {
 .adress {
   font-style: normal;
   display: flex;
-  margin-left: auto;
 }
 
 .page-nav {
-  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 /*-----------------------------------Logo----------------------------------*/
 
 .logo-link {
+  margin-right: 76px;
+}
+.logo-style {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -288,18 +298,12 @@ body {
   text-transform: uppercase;
   color: var(--iris);
 }
-
 .logo-link-span {
   color: var(--navy-blue);
-  margin-right: 76px;
-}
-.logo-portfolio-span {
-  color: var(--cloud);
 }
 
 /*------------------------------Menu----------------------------------------------*/
 .menu-list {
-  display: flex;
   gap: 40px;
 }
 
@@ -310,7 +314,6 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--navy-blue);
-  display: flex;
   gap: 40px;
   position: relative;
 }
@@ -344,12 +347,7 @@ body {
   position: relative;
 }
 .contact-list {
-  display: flex;
-  flex-direction: column;
-  /* gap: 12px; */
-  position: absolute;
-  top: -50%;
-  right: 36px;
+  align-items: center;
 }
 .contact-li {
   margin: auto;
@@ -369,40 +367,6 @@ body {
 .contact-item:focus {
   color: var(--ocean);
 }
-
-/* .page-header {
-  border-bottom: 1px solid var(--cornflower);
-  padding: 24px 0 24px;
-}
-.header-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-.page-nav {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.logo-link {
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--iris);
-  margin-right: 76px;
-}
-
-.logo-link-span {
-  color: var(--navy-blue);
-  margin: 0;
-}
-.menu-list {
-  flex-wrap: wrap;
-} */
 
 /*----------------------------HERO--------------------------------------*/
 /*----------------------------Mobile-----------------------------*/
@@ -500,7 +464,6 @@ body {
 .second-section-li {
   flex-basis: calc((100% - 24px) / 2);
   width: 100%;
-  margin-bottom: 72px;
 }
 .second-section-list {
   display: flex;
@@ -602,10 +565,7 @@ body {
   text-transform: capitalize;
   color: var(--navy-blue);
 }
-/*-----------------------------------------------SECTION 3 (WHAT ARE WE DOING)-----------------------*/
-/* ----------------------------------------------Laptop---------------------------- */
-/*--------------------------------------------------------------SECTION 3 (WHAT ARE WE DOING)------------------------*/
-/* ---------------------------------------------------------------Descktop---------------------------- */
+
 /*----------------------------SECTION 4 (OUR TEAM)-----------------------*/
 /* -----------------------------Mobile---------------------------- */
 
@@ -693,6 +653,8 @@ body {
 .customers-list {
   display: flex;
   flex-wrap: wrap;
+  gap: 72px 16px;
+  max-width: 396px;
 }
 .customers-item {
   flex-basis: calc((100% - 16px) / 2);
@@ -727,13 +689,8 @@ body {
 .customers-link:is(:hover, :focus) {
   color: var(--iris);
 }
-/* -----------------------------Mobile---------------------------- */
-/*----------------------------------------------SECTION 5 (Customers)------------------------*/
-/* ----------------------------------------------Laptop---------------------------- */
-/*---------------------------------------------------------------SECTION 5 (Customers)------------------------*/
-/* ---------------------------------------------------------------Descktop---------------------------- */
-/*------------------------------FOOTER------------------------*/
-/* -----------------------------Mobile---------------------------- */
+/* -----------------------------FOOTER---------------------------- */
+
 .footer {
   background-color: var(--navy-blue);
   padding: 96px 15px;
@@ -823,7 +780,7 @@ body {
 }
 .subscribe-field {
   display: flex;
-  flex-wrap: wrap;
+
   align-items: center;
   justify-content: center;
   gap: 16px;
