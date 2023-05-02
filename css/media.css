@@ -1,4 +1,5 @@
-/*---------Tablet----*/
+/*---------------------------------------TABLET------------------------------*/
+
 @media screen and (min-width: 768px) and (max-width: 1157px) {
   .container {
     max-width: 768px;
@@ -12,5 +13,80 @@
   }
   .logo-link {
     flex-wrap: nowrap;
+  }
+  .menu-list {
+    display: flex;
+    gap: 40px;
+  }
+  .adress {
+    margin-left: auto;
+  }
+  .contact-list {
+    display: flex;
+    gap: 40px;
+  }
+  .contact-li {
+    position: relative;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--navy-blue);
+    transition: color var(--transition);
+  }
+  .contact-li:is(:hover, :focus) {
+    color: var(--ocean);
+  }
+
+  .activ-page {
+    color: var(--ocean);
+  }
+
+  .activ-page::after {
+    position: absolute;
+    left: 0;
+    bottom: -26px;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
+  }
+  .contact-item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+    transition: color var(--transition);
+  }
+
+  .contact-item:is(:hover, :focus) {
+    color: #404bbf;
+  }
+
+  .hero {
+    background-image: var(--navy-blue), url(../images/bg-tablet.jpg);
+    min-width: 1440px;
+    height: 600px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: var(--bg-gradient), url(../images/bg-tablet2x.jpg);
+    }
+  }
+  .hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
+
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
   }
 }
