@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 /* Reset margin styles */
 
 h1,
@@ -61,17 +67,7 @@ body {
   color: var(--slate);
   background-color: var(--white);
 }
-.container {
-  max-width: 428px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.section {
-  padding-top: 96px;
-  padding-bottom: 96px;
-}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -85,7 +81,23 @@ body {
   overflow: hidden;
 }
 /* =========================================================================================== */
-
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .container {
+    max-width: 428px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  .second-section-icon {
+    display: none;
+  }
+}
+/* =========================================================================================== */
 /* ---------------------------------MOBILE MENU-------------------------- */
 .mobile-menu-button {
   border: none;
@@ -136,10 +148,10 @@ body {
   border: 0;
 }
 .menu-list {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  margin-top: 80px;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* gap: 40px; */
+  /* margin-top: 80px; */
 }
 
 .menu-item {
@@ -243,8 +255,6 @@ body {
 .contact-list {
   display: none;
 }
-/* ------------------------------------------HEADER------------------------------------ */
-/* -----------------------------------------Descktop----------------------------------------*/
 
 /*----------------------------HERO--------------------------------------*/
 /*----------------------------Mobile-----------------------------*/
@@ -333,69 +343,34 @@ body {
   }
 }
 
-/*----------------------------HERO--------------------------*/
-/* ---------------------------Tablet--------------------- */
-
-@media screen and (min-width: 768px) {
-  .hero {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/bg-tablet.jpg);
-  }
-
-  .hero-title {
-    font-size: 56px;
-    line-height: 1.07;
-    margin-bottom: 36px;
-  }
-}
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-  screen and (min-resolution: 192dpi) and (min-width: 768px),
-  screen and (min-resolution: 2dppx) and (min-width: 768px) {
-  .hero {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/bg-tablet2x.jpg);
-  }
-}
-
-/*-------------------------------HERO----------------------------- */
-/* -----------------------------Desktop-------------------------- */
-@media screen and (min-width: 1158px) {
-  .hero {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/bg-desktop.jpg);
-  }
-
-  .hero-title {
-    width: 496px;
-    font-size: 56px;
-    line-height: 1.07;
-    margin-bottom: 48px;
-  }
-}
-
 /*----------------------------SECTION (STRATEGY) 2------------------------*/
-/* -----------------------------Mobile---------------------------- */
-.second-section {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
+
 .second-section-list {
   /* gap: 22px;
   display: flex; */
 }
 .second-section-li {
-  /* flex-basis: calc((100% - 72px) / 4); */
+  flex-basis: calc((100% - 24px) / 2);
   width: 100%;
   margin-bottom: 72px;
+}
+.second-section-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 72px;
+}
+
+/* .second-section-li {
+  flex-basis: calc((100% - 24px) / 2);
+} */
+
+.second-section-title {
+  margin-bottom: 8px;
+}
+
+.second-section-text {
+  max-width: auto;
 }
 
 /* --------------------------icon---------------------------- */
