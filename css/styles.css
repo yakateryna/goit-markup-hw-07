@@ -112,10 +112,14 @@ body {
     padding-top: 120px;
     padding-bottom: 72px;
   }
+
   .fourth-section-list {
     display: flex;
     flex-wrap: wrap;
     gap: 72px;
+  }
+  .customers-list {
+    gap: 72px 16px;
   }
   .background {
     margin-left: auto;
@@ -639,20 +643,23 @@ body {
 }
 
 /*----------------------------SECTION 5 (Customers)------------------------*/
+.customers-wraper {
+  text-align: center;
+}
 .customers-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
-  text-align: center;
+
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: #2e2f42;
+  color: var(--navy-blue);
   margin-bottom: 72px;
 }
 .customers-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 72px 16px;
+
   max-width: 396px;
 }
 .customers-item {
