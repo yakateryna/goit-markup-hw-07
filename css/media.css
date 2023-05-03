@@ -38,14 +38,11 @@
   .page-nav {
     display: flex;
   }
-
+  .contact-list {
+  }
   .contact-item {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--navy-blue);
-    transition: color var(--transition);
+    letter-spacing: 0.04em;
+    color: var(--slate);
   }
   .contact-li {
     position: relative;

@@ -228,7 +228,7 @@ body {
 }
 
 .activ-page {
-  color: var(--bg-color-social-icons);
+  color: var(--cornflower);
 }
 
 .mobile-menu-item:is(:hover, :focus) {
@@ -270,7 +270,7 @@ body {
 }
 
 .mobile-menu-mail:is(:hover, :focus) {
-  color: var(--ocean, #404bbf);
+  color: var(--ocean);
 }
 
 .mobile-menu-soc-list {
@@ -378,7 +378,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: inherit;
-  transition: var(--transition-link);
+  transition: var(--transition);
 }
 .contact-item:hover {
   color: var(--ocean);
