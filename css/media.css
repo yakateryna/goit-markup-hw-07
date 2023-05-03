@@ -261,7 +261,7 @@
     color: var(--ocean);
   }
   .underline::after {
-    bottom: -31px;
+    bottom: -23px;
   }
   .activ-page {
     color: var(--iris);
@@ -275,12 +275,12 @@
     display: block;
     width: 100%;
     height: 4px;
-    background-color: #404bbf;
+    background-color: var(--ocean);
     border-radius: 2px;
   }
 
   .contact-item:is(:hover, :focus) {
-    color: #404bbf;
+    color: var(--ocean);
   }
   /* --------------------------------------HERO------------------------------ */
   .hero {
