@@ -106,7 +106,7 @@
   /* --------------------------------SECTION 2--------------- */
   .second-section-icon-wrapper {
     display: flex;
-    background-color: #f4f4fd;
+    background-color: var(--cloud);
     border-radius: 4px;
     align-items: center;
     justify-content: center;

@@ -232,11 +232,11 @@ body {
 }
 
 .activ-page {
-  color: var(--cornflower);
+  color: var(--ocean);
 }
 
 .mobile-menu-item:is(:hover, :focus) {
-  color: var(--text-color-focus-hover, #404bbf);
+  color: var(--ocean, #404bbf);
 }
 
 .mobile-menu-address {
