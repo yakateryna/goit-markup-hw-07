@@ -236,7 +236,7 @@ body {
 }
 
 .mobile-menu-item:is(:hover, :focus) {
-  color: var(--ocean, #404bbf);
+  color: var(--ocean);
 }
 
 .mobile-menu-address {
@@ -252,28 +252,28 @@ body {
 
 .mobile-menu-tel {
   font-weight: 700;
-
+  font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: var(--bg-color-social-icons);
+  color: var(--iris);
   transition: color var(--transition);
 }
 
-.mobile-menu-tel:is(:hover, :focus) {
+.mobile-menu-tel:focus {
   color: var(--ocean);
 }
 
-.menu-mail {
+.mobile-menu-mail {
   font-weight: 500;
   font-size: 20px;
-  line-height: 1.2;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate);
   transition: color var(--transition);
 }
 
-.mobile-menu-mail:is(:hover, :focus) {
+.mobile-menu-mail:focus {
   color: var(--ocean);
 }
 
