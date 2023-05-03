@@ -504,26 +504,11 @@ body {
 /* --------------------------icon---------------------------- */
 
 .second-section-icon-wrapper {
-  /* 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 112px;
-  background-color: var(--cloud);
-  border-radius: 4px;
-  margin-bottom: 8px; */
   display: none;
 }
 .second-section-icon-list {
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 24px; */
 }
-/* .second-section-icon {
-  display: flex;
-  width: 100%;
-} */
+
 /* ------------------------------------------------------------- */
 
 .second-section-title {
